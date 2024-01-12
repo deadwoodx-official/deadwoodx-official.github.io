@@ -38,3 +38,17 @@ body{
     font-weight: 100;
     text-align: center;
 }
+
+@media only screen and (max-width: 480px){
+    .content{
+        width: 90vw;
+        left: 5%;
+    }
+
+    .content h1{
+        width: 90%;
+        left: 5%;
+        font-size: 150%;
+        top: 45%;
+    }
+}
