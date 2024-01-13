@@ -32,9 +32,9 @@ body{
     width: 90%;
     position: absolute;
     left: 5%;
-    top: 35%;
+    top: 40%;
     height: 25%;
-    font-size: 300%;
+    font-size: 400%;
     font-weight: 100;
     text-align: center;
 }
@@ -48,7 +48,7 @@ body{
     .content h1{
         width: 90%;
         left: 5%;
-        font-size: 150%;
+        font-size: 250%;
         top: 45%;
     }
 }
