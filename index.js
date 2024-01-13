@@ -5,7 +5,7 @@ function formatNumberWithTwoDigits(number){
 }
 
 function updateTimer() {
-    const targetEpochTime = 1705141800;
+    const targetEpochTime = 1705147200;
     const currentTime = Math.floor(new Date().getTime() / 1000);
     const remainingSeconds = Math.max(targetEpochTime - currentTime, 0);
 
