@@ -1,54 +1,586 @@
-*{
+body{
+    background-color: #000f;
+    backdrop-filter: blur(6px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#toptitle{
+    color: #fff;
+    position: absolute;
+    width: 10vw;
+    height: 6vh;
+    left: 10vw;
+    font-weight: 700;
+    top: 4vh;
+    font-size: 120%;
+}
+
+#topbar{
+    width: 40vw;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 5vh;
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    top: 3vh;
+    align-items: center;
+    position: absolute;
+    left: 30vw;
 }
 
-body{
-    background-color: #e6e6e6;
+#topbar li{
+    padding: 2px 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 95%;
+    color: #fff;
 }
 
-.content{
-    background-color: #fff;
+#topbar li:hover{
+    font-size: 110%;
+}
+
+.ServicesPage{
     width: 30vw;
-    height: 40vh;
-    border-radius: 10px;
-    position: absolute;
-    left: 35vw;
-    top: 30vh;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 2;
+    background-color: #141516;
+    left: 70vw;
+    right: 0;
+    z-index: 2;
+    position: fixed;
+    display: none;
 }
 
-.content h2{
-    width: 80%;
+.ContactMePage{
+    width: 30vw;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 2;
+    background-color: #141516;
+    left: 70vw;
     position: absolute;
-    left: 10%;
-    text-align: center;
-    font-size: 100%;
+}
+
+#title{
+    position: absolute;
+    top: 35vh;
+    left: 9vw;
+    width: 50vw;
+    color: #fff;
+    height: 20vh;
+    font-size: 230%;
+}
+
+#title0{
+    position: absolute;
+    top: 30vh;
+    color: #fff;
+    left: 9vw;
+}
+
+#explore{
+    position: absolute;
+    border: none;
+    width: 10vw;
+    height: 6vh;
+    background-color: #fcba03;
+    color: #000;
+    font-size: 90%;
+    font-weight: 550;
+    font-family: "Open Sans",sans-serif;
+    cursor: pointer;
+    border-radius: 6px;
+    top: 52.5vh;
+    left: 9vw;
+    transition: 0.3s;
+    box-shadow: 0px 2px 10px 0px #525252;
+    margin: 0;
+    padding: 0;
+}
+
+#freeservices{
+    position: absolute;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 10vw;
+    z-index: 2;
+    height: 6vh;
+    background-color: #4aa855;
+    color: #000;
+    font-family: "Open Sans",sans-serif;
+    font-size: 90%;
+    font-weight: 550;
+    top: 52.5vh;
+    transition: 0.3s;
+    left: 20vw;
+    box-shadow: 0px 2px 10px 0px #525252;
+}
+
+.posts{
+    width: 40vw;
+    left: 9vw;
+    background-color: rgba(20, 21, 22, 0.85);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: 3;
+    top: 62.5vh;
+    border-radius: 6px;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    height: 15vh;
+    justify-content: left;
+}
+
+.posts ul{
+    list-style-type: none;
+    justify-items: left;
+}
+
+.posts ul li{
+    height: 90%;
+    align-items: center;
+    display: flex;
+    margin: 0px 15px 2px 0px;
+    position: relative;
+    padding: 0px 10px;
+}
+
+.posts ul li::before{
+    height: 90%;
+    background-color: rgb(60, 60, 60);
+    width: 8px;
+    position: absolute;
+    left: -5%;
+    border-radius: 6px;
+    top: 10%;
+    content: "";
+}
+
+#TitleTop{
+    color: #fff;
+    width: 100%;
+    height: 20%;
+    text-transform: uppercase;
+    font-size: 70%;
+    position: absolute;
     opacity: 0.8;
+    font-weight: 550;
+    top: 0%;
+}
+
+#desc{
+    overflow: hidden;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    font-size: 70%;
+    display: flex;
+    margin-left: 0;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    height: 60%;
+    justify-content: flex-start;
+    margin-top: 10%;
+    align-items: flex-end;
+}
+
+.ServicesPage ul{
+    width: 80%;
+    height: 60%;
+    display: inline;
+    left: 5%;
+    position: absolute;
     top: 10%;
 }
 
-.content h1{
-    width: 90%;
+.offscreen{
+    transform: translate(-150%);
+}
+
+#playing{
+    color: #fff;
+}
+
+.ServicesPage h3{
+    color: #fff;
+    font-size: 150%;
+    width: 50%;
     position: absolute;
-    left: 5%;
-    top: 40%;
-    height: 25%;
-    font-size: 400%;
-    font-weight: 100;
+    left: 10%;
+}
+
+.ServicesPage ul p{
+    color: #fff;
+    width: 100%;
+    justify-content: left;
+    height: 10%;
+    font-size: 100%;
+    position: relative;
+}
+
+.s ul p::before{
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    left: -5%;
+    height: 3px;
+    width: 3px;
+    top: 25%;
+}
+
+.ContactMePage{
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+.ContactMePage h3{
+    color: #fff;
     text-align: center;
 }
 
-@media only screen and (max-width: 480px){
-    .content{
-        width: 90vw;
-        left: 5%;
-    }
+.ContactMePage ul a img{
+    border: none;
+    width: 30px;
+    margin: 1px 5px;
+    height: 30px;
+}
 
-    .content h1{
-        width: 90%;
-        left: 5%;
-        font-size: 250%;
-        top: 45%;
-    }
+.ContactMePage ul{
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    margin: 0;
+    list-style-type: none;
+    border: none;
+    padding: 0;
+    position: absolute;
+    left: 25%;
+}
+
+.ContactMePage input{
+    background-color: #232425;
+    border: none;
+    color: #fff;
+    height: 5%;
+    width: 70%;
+    padding: 0;
+    margin: 10px 0px;
+    display: flex;
+    text-align: left;
+    border: none;
+}
+
+.ContactMePage button{
+    width: 50%;
+    text-align: center;
+    background-color: #83cc8b;
+    color: #fff;
+    border: none;
+    height: 5%;
+    transition: 0.1s;
+    margin: 10px 0px;
+    font-size: 100%;
+}
+
+.ContactMePage button:hover{
+    font-size: 110%;
+}
+
+#email{
+    width: 70%;
+    height: 5%;
+    border-radius: 2px;
+    font-size: 100%;
+}
+
+#meet{
+    margin-top: 60px;
+}
+
+#querytext{
+    height: 15%;
+    width: 70%;
+    background-color: #232425;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 100%;
+    resize: none;
+    border: none;
+}
+
+#date{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#time{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#reason{
+    height: 10%;
+    width: 70%;
+    color: #fff;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #232425;
+    resize: none;
+    border: none;
+}
+
+.PreviousWorkPage{
+    width: 30vw;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 2;
+    background-color: #141516;
+    left: 70vw;
+    position: absolute;
+    justify-content: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.PreviousWorkPage h3{
+    color: #fff;
+    text-align: center;
+}
+
+.PreviousWorkPage p{
+    width: 80%;
+    text-align: left;
+    color: #fff;
+}
+
+.PreviousWorkPage video{
+    width: 80%;
+}
+
+.SkillsPage{
+    width: 30vw;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 2;
+    background-color: #141516;
+    left: 70vw;
+    position: absolute;
+    justify-content: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.SkillsPage h3{
+    color: #fff;
+}
+
+.SkillsPage li img{
+    position: absolute;
+    top: 26px;
+    width: 20px;
+    height: 20px;
+}
+
+.SkillsPage ul{
+    list-style-type: none;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+}
+
+.SkillsPage ul li{
+    padding: 2px 10px;
+    background-color: rgba(33, 34, 35, 0.85);
+    backdrop-filter: blur(10px);
+    margin-bottom: 15px;
+}
+
+.SkillsPage ul li h3{
+    color: #fff;
+}
+
+.SkillsPage ul li h3{
+    margin-left: 30px;
+}
+
+.SkillsPage ul li p{
+    color: #fff;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+#exp{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    opacity: 0.8;
+    font-size: 90%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 50;
+}
+
+.SkillsPage ul li ul{
+    list-style-type: disc !important;
+}
+
+.SkillsPage ul li button{
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(100, 190, 100);
+    width: 30%;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 2px;
+    font-weight: 400;
+    cursor: alias;
+}
+
+.ServicesPage{
+    display: flex;
+    z-index: 2;
+}
+
+.ContactMePage{
+    display: none;
+}
+
+.PreviousWorkPage{
+    display: none;
+}
+
+.SkillsPage{
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+
+#explore:hover{
+    color: #000;
+    font-size: 110%;
+}
+
+#freeservices:hover{
+    color: #000;
+    font-size: 110%;
+}
+
+@media(max-width: 768px){
+   body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: hidden;
+   }
+   .ContactMePage,
+   .SkillsPage,
+   .ServicesPage,
+   .PreviousWorkPage{
+    width: 90vw;
+    height: 100vh;
+    position: relative;
+    left: 10%;
+    overflow-y: scroll;
+   }
+
+   .PreviousWorkPage video{
+    width: 90%;
+    height: 40vh;
+   }
+
+   #toptitle{
+    width: 10%;
+    height: 25vh;
+    top: 3vh;
+    font-size: 100%;
+   }
+
+   #menu{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 85vw;
+    top: 2.5vh;
+   }
+
+   #title0{
+    width: 30vw;
+    font-size: 100%;
+   }
+
+   #title{
+    font-size: 130%;
+    width: 70vw;
+    height: 50vh;
+   }
+
+   #explore{
+    width: 50vw;
+    left: 9vw;
+    top: 55vh;
+    margin: 10px 0px;
+   }
+   #freeservices{
+    width: 50vw;
+    margin: 0;
+    top: 64vh;
+    left: 9vw;
+   }
+
+   .posts{
+    display: none;
+   }
+
+   #topbar{
+    width: 100vw;
+    background-color: #141516;
+    left: 0;
+    height: 95vh;
+    z-index: 5;
+    margin-top: 5vh;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+   }
+
+   #topbar li{
+    color: #fff;
+    width: 80vw;
+    text-align: center;
+    height: 30px;
+   }
 }
