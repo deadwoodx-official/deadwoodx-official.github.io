@@ -144,7 +144,6 @@ body{
 
 .list{
     width: 46.5vw;
-    position: relative;
     left: 10vw;
     top: 35vh;
     overflow-y: auto;
@@ -220,5 +219,115 @@ body{
 }
 
 .scroll{
+    width: 46.5vw;
+    height: 60vh;
+    left: 10vw;
+    padding: 0;
+    margin: 0;
+    top: 35vh;
     position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+@media(max-width: 768px){
+    .categories{
+        display: none;
+    }
+
+    #menu{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 85vw;
+        top: 5vh;
+    }
+
+    .content h2{
+        width: 80vw;
+        top: 13vh;
+        left: 10vw;
+        font-size: 130%;
+    }
+    #searchbar{
+        width: 80vw;
+        top: 22vh;
+        left: 10vw;
+    }
+
+    #topbar{
+        width: 80vw;
+        background-color: #141516;
+        left: 20vw;
+        height: 100vh;
+        transition: 0.5;
+        box-shadow: -2px 0px 6px rgba(255, 255, 255, 0.2);
+        z-index: 5;
+        margin-top: 5vh;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+    }
+    
+    #topbar li{
+        color: #fff;
+        width: 80vw;
+        text-align: center;
+        height: 40px;
+        font-size: 110%;
+    }
+
+    .scroll{
+        width: 85vw;
+        left: 10vw;
+        overflow-y: auto;
+    }
+
+    #itemtitle{
+        width: 80%;
+        left: 5%;
+        text-align: left;
+        justify-content: left;
+        display: flex;
+    }
+
+    .list{
+        width: 85vw;
+        overflow-y: auto;
+        left: 10vw;
+    }
+
+    .item{
+        width: 100%;
+    }
+
+    .item p{
+        width: 80%;
+        left: 6%;
+        position: absolute;
+        height: 20%;
+        font-size: 75%;
+    }
+    .item img{
+        height: 25px;
+        width: 25px;
+        left: 8%;
+    }
+
+    #url,
+    #learnmore{
+        width: 30%;
+    }
+
+    #url{
+        position: absolute;
+        left: 20%;
+    }
+    #learnmore{
+        left: 55%;
+    }
 }
