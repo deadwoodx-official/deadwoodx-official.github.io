@@ -29,6 +29,7 @@ body{
     justify-content: center;
     display: flex;
     top: 3vh;
+    transition: 0.5s;
     align-items: center;
     position: absolute;
     left: 30vw;
@@ -107,7 +108,7 @@ body{
     padding: 0;
 }
 
-#freeservices{
+#contact{
     position: absolute;
     border: none;
     padding: 0;
@@ -491,7 +492,7 @@ html {
     font-size: 110%;
 }
 
-#freeservices:hover{
+#contact:hover{
     color: #000;
     font-size: 110%;
 }
@@ -514,6 +515,10 @@ html {
     overflow-y: scroll;
    }
 
+   .ServicesPage{
+    display: none;
+   }
+
    .PreviousWorkPage video{
     width: 90%;
     height: 40vh;
@@ -523,7 +528,7 @@ html {
     width: 10%;
     height: 25vh;
     top: 3vh;
-    font-size: 100%;
+    font-size: 110%;
    }
 
    #menu{
@@ -537,50 +542,60 @@ html {
 
    #title0{
     width: 30vw;
+    top: 27vh;
     font-size: 100%;
    }
 
    #title{
-    font-size: 130%;
+    font-size: 150%;
     width: 70vw;
+    top: 32vh;
     height: 50vh;
    }
 
    #explore{
-    width: 50vw;
+    width: 80vw;
     left: 9vw;
-    top: 55vh;
+    top: 50vh;
     margin: 10px 0px;
    }
-   #freeservices{
-    width: 50vw;
+   #contact{
+    width: 80vw;
     margin: 0;
-    top: 64vh;
+    top: 60vh;
     left: 9vw;
    }
 
    .posts{
-    display: none;
+    width: 80vw;
+    left: 10vw;
+    top: 70vh;
+    overflow-y: scroll;
+    height: 28vh;
    }
 
    #topbar{
-    width: 100vw;
+    width: 80vw;
     background-color: #141516;
-    left: 0;
-    height: 95vh;
+    left: 20vw;
+    height: 100vh;
+    transition: 0.5;
+    box-shadow: -2px 0px 6px rgba(255, 255, 255, 0.2);
     z-index: 5;
     margin-top: 5vh;
     padding: 0;
     justify-content: center;
     align-items: center;
-    display: none;
+    display: flex;
     flex-direction: column;
+    opacity: 0;
    }
 
    #topbar li{
     color: #fff;
     width: 80vw;
     text-align: center;
-    height: 30px;
+    height: 40px;
+    font-size: 110%;
    }
 }
