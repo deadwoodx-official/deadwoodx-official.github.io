@@ -5,6 +5,7 @@ const skillsButton = document.getElementById("SkillsButton");
 const category = document.getElementById("categories");
 const toptitle = document.getElementById("title1");
 const list = document.getElementById("listofitems");
+const scroll = document.getElementById("scroll");
 let device = null;
 
 button.addEventListener("click",function(){
@@ -14,6 +15,14 @@ button.addEventListener("click",function(){
     }else{
         menu.style.opacity = 1
     }
+})
+
+scroll.addEventListener("touchmove",function(event){
+    event.preventDefault();
+})
+
+list.addEventListener("touchmove",function(event){
+    event.preventDefault()
 })
 
 skillsButton.addEventListener("click",async function(){
