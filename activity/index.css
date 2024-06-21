@@ -230,6 +230,10 @@ body{
     overflow-y: auto;
 }
 
+#menu{
+    display: none;
+}
+
 @media(max-width: 768px){
     .categories{
         display: none;
