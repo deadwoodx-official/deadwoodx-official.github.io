@@ -18,6 +18,7 @@
     height: 40px;
     position: absolute;
     left: 3vw;
+    filter: drop-shadow(1px 1px 1px #000);
     top: 4vh;
 }
 
