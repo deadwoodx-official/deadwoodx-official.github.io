@@ -1,6 +1,6 @@
 const url = new URL(window.location.href);
 const searchparms = new URLSearchParams(url.search);
-console.log(searchparms)
+console.log(searchparms.values());
 
 const devicecode = searchparms.get("dc") || "0";
 const chosenbutton = Math.round(Math.random()*3)
