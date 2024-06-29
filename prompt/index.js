@@ -1,9 +1,10 @@
 const url = new URL(window.location.href);
+console.log(window.location.href)
+console.log(url)
 const searchparms = new URLSearchParams(url.search);
-console.log(searchparms.values());
 
 const devicecode = searchparms.get("dc") || "0";
-const chosenbutton = Math.round(Math.random()*3)
+const chosenbutton = Math.round(Math.random()*2)
 
 const button1 = document.getElementById("1");
 const button2 = document.getElementById("2");
