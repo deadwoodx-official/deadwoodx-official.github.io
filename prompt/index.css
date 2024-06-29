@@ -4,7 +4,35 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#na{
+    display: flex;
+    font-weight: 100;
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    left: 35vw;
+    top: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+h3,h2,ul,input,h1{
+    display: none;
+}
+
+#icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 3vw;
+    top: 4vh;
+}
+
 @media (max-width: 426px){
+
+    #na{
+        display: none;
+    }
     #title{
         position: absolute;
         width: 90vw;
@@ -13,8 +41,8 @@
         left: 5vw;
         text-align: center;
         top: 30vh;
-        font-size: 140%;
-        font-weight: 300;
+        font-size: 160%;
+        font-weight: 200;
     }
 
     .buttons{

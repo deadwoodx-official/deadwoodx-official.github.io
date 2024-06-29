@@ -14,6 +14,12 @@ laptopButton.addEventListener("click",function(){
             connected = true;
             websocket.send(JSON.stringify({message: 'laptopconnect'}))
         });
+
+        websocket.addEventListener("close",function(event){
+            connected = false;
+            websocket = null;
+            laptopui.style.display = "none";
+        })
         websocket.addEventListener("message",function(msg){
             const data = JSON.parse(msg.data);
             const action = data.action;
