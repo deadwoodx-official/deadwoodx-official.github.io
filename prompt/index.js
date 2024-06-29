@@ -1,5 +1,5 @@
-const url = window.location.href;
-const searchparms = new URLSearchParams(url);
+const url = new URL(window.location.href);
+const searchparms = new URLSearchParams(url.search);
 console.log(searchparms)
 
 const devicecode = searchparms.get("dc") || "0";
