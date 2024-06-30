@@ -17,8 +17,11 @@ fetch(`https://pricey-butternut-pear.glitch.me/ccode?dc=${devicecode}`)
     if (!response.ok){
         console.log("error")
     }else{
-        console.log(response.json())
+        return response.json()
     }
+})
+.then(data =>{
+    console.log(data)
 })
 for (let i = 0;i < 3;i++){
     let buttonrn = buttons[i];
