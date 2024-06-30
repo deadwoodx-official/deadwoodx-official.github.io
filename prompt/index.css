@@ -76,4 +76,8 @@ h3,h2,ul,input,h1{
     .buttons li:hover{
         font-size: 300%;
     }
+
+    #icon{
+        left: 10vw;
+    }
 }
