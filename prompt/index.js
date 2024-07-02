@@ -1,5 +1,3 @@
-const { errorMonitor } = require("ws");
-
 const url = new URL(window.location.href);
 const searchparms = new URLSearchParams(url.search);
 
