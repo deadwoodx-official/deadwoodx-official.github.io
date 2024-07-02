@@ -20,10 +20,6 @@ h3,h2,ul,input,h1{
     display: none;
 }
 
-.buttons li{
-    display: none;
-}
-
 #icon{
     width: 40px;
     height: 40px;
@@ -54,6 +50,7 @@ h3,h2,ul,input,h1{
         height: 15vh;
         position: absolute;
         left: 5vw;
+        display: flex;
         list-style-type: none;
         top: 45vh;
         justify-content: center;
@@ -66,6 +63,8 @@ h3,h2,ul,input,h1{
         border-radius: 6px;
         height: 100%;
         margin: 0px 10px;
+        display: flex;
+        opacity: 0;
         cursor: pointer;
         box-shadow: 1px 1px 6px #000;
         color: #000;

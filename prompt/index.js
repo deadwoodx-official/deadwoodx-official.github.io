@@ -24,8 +24,8 @@ fetch(`https://pricey-butternut-pear.glitch.me/ccode?dc=${devicecode}`)
     if (data.success === true){
         codetp = data.code;
         for (let i = 0;i < 3;i++){
-            let buttonrn = buttons[i];
-            buttonrn.style.display = 'flex';
+            const buttonrn = buttons[i];
+            buttonrn.style.opacity = 1;
             if (i === chosenbutton){
                 buttonrn.textContent = data.code;
             }else{
