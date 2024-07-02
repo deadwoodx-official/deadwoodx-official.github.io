@@ -1,3 +1,5 @@
+const { errorMonitor } = require("ws");
+
 const url = new URL(window.location.href);
 const searchparms = new URLSearchParams(url.search);
 
@@ -9,7 +11,7 @@ const button2 = document.getElementById("2");
 const button3 = document.getElementById("3");
 
 const buttons = [button1,button2,button3];
-let code = null;
+let code;
 
 fetch(`https://pricey-butternut-pear.glitch.me/ccode?dc=${devicecode}`)
 .then(response =>{
@@ -23,7 +25,11 @@ fetch(`https://pricey-butternut-pear.glitch.me/ccode?dc=${devicecode}`)
     console.log(data);
     if (data.success === true){
         code = data.code;
+        console.log("put code")
     }
+})
+.catch(error =>{
+    console.log(error)
 })
 for (let i = 0;i < 3;i++){
     let buttonrn = buttons[i];
