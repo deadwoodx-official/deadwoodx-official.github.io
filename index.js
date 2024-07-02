@@ -49,7 +49,6 @@ laptopButton.addEventListener("click",function(){
         websocket.addEventListener("message",function(msg){
             const data = JSON.parse(msg.data);
             const action = data.action;
-            console.log(data)
             if (action === 'connect'){
                 laptopui.style.display = "flex";
                 qrcodeframe.style.display = "flex";
