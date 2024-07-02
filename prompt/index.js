@@ -9,6 +9,7 @@ const button2 = document.getElementById("2");
 const button3 = document.getElementById("3");
 
 const buttons = [button1,button2,button3];
+let code = null;
 
 fetch(`https://pricey-butternut-pear.glitch.me/ccode?dc=${devicecode}`)
 .then(response =>{
@@ -19,13 +20,23 @@ fetch(`https://pricey-butternut-pear.glitch.me/ccode?dc=${devicecode}`)
     }
 })
 .then(data =>{
-    console.log(data)
+    if (data.success){
+        code = data.code;
+    }
 })
 for (let i = 0;i < 3;i++){
     let buttonrn = buttons[i];
     if (i === chosenbutton){
-        buttonrn.textContent = "meow";
+        buttonrn.textContent = code;
     }else{
         buttonrn.textContent = Math.round(Math.random()*200)
     }
+    buttonrn.addEventListener("click",function(){
+        if (buttonrn.textContent === code){
+            console.log("w");
+            window.location.href = "https://youtube.com"
+        }else{
+            console.log("bruh")
+        }
+    })
 }
