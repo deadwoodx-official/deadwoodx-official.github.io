@@ -20,7 +20,8 @@ fetch(`https://pricey-butternut-pear.glitch.me/ccode?dc=${devicecode}`)
     }
 })
 .then(data =>{
-    if (data.success){
+    console.log(data);
+    if (data.success === true){
         code = data.code;
     }
 })
