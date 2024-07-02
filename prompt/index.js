@@ -25,13 +25,14 @@ fetch(`https://pricey-butternut-pear.glitch.me/ccode?dc=${devicecode}`)
         codetp = data.code;
         for (let i = 0;i < 3;i++){
             let buttonrn = buttons[i];
+            buttonrn.style.display = 'flex';
             if (i === chosenbutton){
                 buttonrn.textContent = data.code;
             }else{
                 buttonrn.textContent = Math.round(Math.random()*200)
             }
             buttonrn.addEventListener("click",function(){
-                if (buttonrn.textContent === code){
+                if (buttonrn.textContent === codetp){
                     console.log("w");
                     window.location.href = "https://youtube.com"
                 }else{

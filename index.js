@@ -44,6 +44,7 @@ laptopButton.addEventListener("click",function(){
             connected = false;
             websocket = null;
             laptopui.style.display = "none";
+            loadingtext.textContent = "QR Code session timed out.";
         })
         websocket.addEventListener("message",function(msg){
             const data = JSON.parse(msg.data);
