@@ -112,3 +112,16 @@
     top: 75vh;
     font-weight: 400;
 }
+
+#connectionstatus{
+    position: absolute;
+    left: 13vw;
+    display: none;
+    top: 70vh;
+    width: 20vw;
+    height: 100px;
+    font-size: 100%;
+    justify-content: left;
+    text-align: left;
+    font-weight: 500;
+}
