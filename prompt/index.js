@@ -1,24 +1,19 @@
-const url = new URL(window.location.href);
-const searchparms = new URLSearchParams(url.search);
-
-const devicecode = searchparms.get("dc") || "0";
-const chosenbutton = Math.round(Math.random()*2)
-
-const button1 = document.getElementById("1");
-const button2 = document.getElementById("2");
-const button3 = document.getElementById("3");
-
-const stitle = document.getElementById("successtitle");
-const title = document.getElementById('title');
-
-const fileinputdiv = document.querySelector(".filelist");
-
-const buttons = [button1,button2,button3];
-let codetp;
-
-function buttonFunction(button){
-    console.log("Adding event listener to ",button);
-    button.addEventListener("click",function(){
+document.addEventListener("DOMContentLoaded",function(){
+    const url = new URL(window.location.href);
+    const searchparms = new URLSearchParams(url.search);
+    const devicecode = searchparms.get("dc") || "0";
+    const chosenbutton = Math.round(Math.random()*2)
+    const button1 = document.getElementById("one");
+    const button2 = document.getElementById("two");
+    const button3 = document.getElementById("three");
+    const stitle = document.getElementById("successtitle");
+    const title = document.getElementById('title');
+    const fileinputdiv = document.querySelector(".filelist");
+    const buttons = [button1,button2,button3];
+    let codetp;
+    function buttonFunction(button){
+        console.log("Adding event listener to ",button);
+        button.addEventListener("click",function(){
         console.log("sold222");
         if (button.textContent === codetp){
             fetch(`https://pricey-butternut-pear.glitch.me/logins?dc=${devicecode}`)
@@ -71,4 +66,5 @@ fetch(`https://pricey-butternut-pear.glitch.me/ccode?dc=${devicecode}`)
 })
 .catch(error =>{
     console.log(error)
+})
 })
