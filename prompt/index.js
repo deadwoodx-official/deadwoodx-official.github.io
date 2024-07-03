@@ -62,6 +62,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     } else {
                         button.textContent = Math.round(Math.random() * 200);
                     }
+                    button.addEventListener("click",function(){
+                        console.log("sold ahahaha")
+                    })
                     buttonFunction(button);
                 });
             }
