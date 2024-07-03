@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (data.success === true) {
                 codetp = data.code;
                 buttons.forEach((button, i) => {
-                    button.style.opacity = 1;
+                    button.style.display = "flex";
                     if (i === chosenbutton) {
                         button.textContent = data.code;
                     } else {
