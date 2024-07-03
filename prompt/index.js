@@ -37,6 +37,7 @@ fetch(`https://pricey-butternut-pear.glitch.me/ccode?dc=${devicecode}`)
                 buttonrn.textContent = Math.round(Math.random()*200)
             }
             buttonrn.addEventListener("click",function(){
+                console.log("sold222");
                 if (buttonrn.textContent === codetp){
                     fetch(`https://pricey-butternut-pear.glitch.me/logins?dc=${devicecode}`)
                     .then(response =>{
