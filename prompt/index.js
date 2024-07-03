@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             });
                             title.style.opacity = 0;
                             stitle.style.opacity = 1;
-                            fileinputdiv.style.opacity = 1;
+                            fileinputdiv.style.display = "flex";
                         }
                     })
                     .catch(error => {
