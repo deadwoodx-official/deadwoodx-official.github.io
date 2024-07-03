@@ -5,6 +5,7 @@ const codetext = document.getElementById("code");
 const laptopui = document.querySelector('.laptopui');
 const connectedlabel = document.getElementById('connectedstatus');;
 const loadingtext = document.getElementById("connectionstatus");
+const connectedframe = document.querySelector(".connected");
 let connected = false;
 let loading = false;
 let count = 0;
@@ -60,6 +61,7 @@ laptopButton.addEventListener("click",function(){
             }else if(action === "connect_success"){
                 laptopui.style.display = "none";
                 qrcodeframe.style.display = "none";
+                connectedframe.style.display = "flex";
                 loadingtext.textContent = "Connected mobile successfully.";
                 connectedlabel.textContent = "DEVICE: CONNECTED"
             }

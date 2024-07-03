@@ -72,10 +72,6 @@
     background-color: #f0f0f0;
 }
 
-.connected{
-    display: flex;
-}
-
 .connected img{
     position: absolute;
     width: 100px;
