@@ -44,7 +44,7 @@ laptopButton.addEventListener("click",function(){
             connected = false;
             websocket = null;
             laptopui.style.display = "none";
-            loadingtext.textContent = "QR Code session timed out.";
+            loadingtext.textContent = "Session timed out or couldn't connect - try again later.";
         })
         websocket.addEventListener("message",function(msg){
             const data = JSON.parse(msg.data);
@@ -57,7 +57,10 @@ laptopButton.addEventListener("click",function(){
                 const devicecode = data.devicecode;
                 createQRCode(url);
                 codetext.textContent = code;
-            }else{
+            }else if(action === "connect_success"){
+                laptopui.style.display = "none";
+                qrcodeframe.style.display = "none";
+                loadingtext.textContent = "Connected mobile successfully.";
                 connectedlabel.textContent = "DEVICE: CONNECTED"
             }
         })
