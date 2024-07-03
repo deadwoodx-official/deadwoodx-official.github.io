@@ -17,6 +17,7 @@ const buttons = [button1,button2,button3];
 let codetp;
 
 function buttonFunction(button){
+    console.log("sold");
     button.addEventListener("click",function(){
         console.log("sold222");
         if (button.textContent === codetp){
