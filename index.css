@@ -59,7 +59,7 @@
     top: 15%;
 }
 
-.laptopui{
+.laptopui,.connected{
     width: 30vw;
     height: 75vh;
     display: none;
@@ -69,7 +69,45 @@
     justify-content: center;
     align-items: center;
     border-radius: 6px;
-    background-color: #ebebeb;
+    background-color: #f0f0f0;
+}
+
+.connected{
+    display: flex;
+}
+
+.connected img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 10%;
+}
+
+#title2{
+    position: absolute;
+    width: 70%;
+    height: 50px;
+    left: 15%;
+    top: 30%;
+    font-size: 180%;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connected h4{
+    width: 65%;
+    left: 16.5%;
+    position: absolute;
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    top: 45%;
+    opacity: 0.85;
+    font-weight: 300;
+    font-size: 130%;
 }
 
 .laptopui h3{
