@@ -38,7 +38,7 @@ h3,h2,ul,input,h1{
     position: absolute;
     width: 70vw;
     height: 20vh;
-    display: flex;
+    display: none;
     transition: 0.25s;
     justify-content: center;
     align-items: flex-start;

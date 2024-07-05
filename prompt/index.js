@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     .then(jsondata => {
                         if (jsondata.success) {
                             buttons.forEach(element => {
-                                element.style.opacity = 0;
+                                element.style.display = "none";
                             });
-                            title.style.opacity = 0;
-                            stitle.style.opacity = 1;
+                            title.style.display = "none";
+                            stitle.style.display = "none";
                             fileinputdiv.style.display = "flex";
                         }
                     })
