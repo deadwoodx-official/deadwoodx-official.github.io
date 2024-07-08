@@ -11,19 +11,30 @@
 </head>
 <body>
     <img src="Images/cloud.png" id="icon">
-    <img id="" src="Images/Untitled design (97).png">
+    <img id="ad" src="Images/Untitled design (97).png">
     <h3 id="heading">Send/recieve files from your device.</h3>
+    <article id="description">
+        <p>Upto 2GB files.</p>
+        <p>Supports: Video, audio and visual content files.</p>
+        <p>Windows 10 and above, macOS 10.01 and above, Android & iOS</p>
+    </article>
     <h4 id="connectedstatus">DEVICE: -</h4>
 
     <h4 id="desc">Select your current device</h4>
     <button id="laptop">💻</button>
     <button id="mobile">📱</button>
     <h3 id="connectionstatus">CONNECTING</h3>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <div class="laptopui">
-        <h3>Scan this on your mobile</h3>
+        <h3>Connect your mobile</h3>
         <div id="qrcode"></div>
+        <article>
+            <p>Step 1: Scan the QR Code.</p>
+            <p>Step 2: Tap on "Go to website"</p>
+            <p>Step 3: Tap on the correct code.</p>
+        </article>
         <h4>and select the code below on your mobile screen.</h4>
-        <h2 id="code">-</h2>
+        <h2 id="code">Code: 18</h2>
     </div>
     <div class="connected">
         <img src="Images/hexagon-check.png">
@@ -32,7 +43,11 @@
         <ul>
         </ul>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <footer class="bottomfooter">
+        <h3>DEADWOODX.</h3>
+        <p>All rights and patents reserved @ 2024</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.6/platform.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

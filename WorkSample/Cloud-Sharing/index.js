@@ -14,6 +14,15 @@ let dot = ".";
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+const navigatoragent = navigator.userAgent.toLowerCase();
+let devicename = "";
+if (navigatoragent.includes("android")){
+    devicename = "Android Mobile";
+}else if(navigatoragent.includes("iphone")){
+    devicename = "iPhone"
+}else if(navigatoragent.includes("windows")){
+    devicename = "Windows Laptop"
+}
 
 async function startLoading(){
     count = 0;
