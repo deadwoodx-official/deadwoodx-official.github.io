@@ -3,33 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Sharing - Aakash [Deadwoodx]</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <title>Profile Woodx</title>
+    <script src="https://cdn.jsdelivr.net/npm/device@2.0.0/dist/device.min.js"></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="Images/cloud.png" id="icon">
-    <h3 id="heading">Send/recieve files from your device.</h3>
-    <h4 id="connectedstatus">DEVICE: -</h4>
+    <p1 id="toptitle">DEADWOODX.</p1>
+        <ul id="topbar">
+            <li id="SkillsButton">PROJECTS</li>
+            <li id="PreviousWorkButton" >ABOUT</li>
+            <li id="ContactMeButton" >CONTACT</li>
+        </ul>
 
-    <h4 id="desc">Select your current device</h4>
-    <button id="laptop">💻</button>
-    <button id="mobile">📱</button>
-    <h3 id="connectionstatus">CONNECTING</h3>
-    <div class="laptopui">
-        <h3>Scan this on your mobile</h3>
-        <div id="qrcode"></div>
-        <h4>and select the code below on your mobile screen.</h4>
-        <h2 id="code">-</h2>
+        <p1 id="title0">Crafting and</p1>
+        <p1 id="title">Dedicated to deliver marvellous service excellence!</p1>
+        <button onclick="window.location.href = '/activity/index.html'" id="explore">VIEW WORK</button>
+        <button onclick="window.location.href = '/contact/index.html'" id="contact">CONTACT</button>
+        <img src="Images/menu-burger (3).png" id="menu">
+        <div class="posts" id="postpage">
+            <ul>
+                <li>
+                    <p id="TitleTop">NOV 19' 2023</p>
+                    <a href="https://devforum.roblox.com/t/how-to-make-a-cross-server-matchmaking-system-full-tutorial/2707983" id="desc">Made a Tutorial on<br>matching making framework.</a>
+                </li>
+                <li>
+                    <p id="TitleTop">MAY 28' 2022</p>
+                    <a href="https://devforum.roblox.com/t/how-to-make-a-licensed-system-on-roblox/1777800" id="desc">Made a Tutorial on<br>licesing system framework.</a>
+                </li>
+               <li>
+                    <p id="TitleTop">MAY 22' 2022</p>
+                    <a href="https://devforum.roblox.com/t/some-good-tips-for-ui/1774803" id="desc">A guide on<br>improving user interface.</a>
+                </li>
+                <li>
+                    <p id="TitleTop">APR 22' 2022</p>
+                    <a href="https://devforum.roblox.com/t/how-to-make-a-working-animated-roller-coaster/1766915" id="desc">A guided tutorial on<br>creating roller coasters.</a>
+                </li>
+                <li>
+                    <p id="TitleTop">DEC 21' 2021</p>
+                    <a href="https://devforum.roblox.com/t/how-to-make-a-basic-train/1582741" id="desc">A tutorial on<br>train framework</a>
+                </li>
+                <li>
+                    <p id="TitleTop">DEC 21' 2021</p>
+                    <a href="https://devforum.roblox.com/t/how-to-make-a-working-grid-system-in-roblox/1575157" id="desc">A tutorial on<br>creating grid framework.</a>
+                </li>
+                <li>
+                    <p id="TitleTop">OCT 21' 2021</p>
+                    <a href="https://devforum.roblox.com/t/how-to-get-a-server-location-on-roblox/1518509" id="desc">Made a Tutorial on<br>Server Location</a>
+                </li>
+            </ul>
+        </div>
+    <div class="ServicesPage">
+        <h3>MY SERVICES</h3>
     </div>
-    <div class="connected">
-        <img src="Images/hexagon-check.png">
-        <h3 id="title2">Connected successfully!</h3>
-        <h4>Files recieved:</h4>
+
+    <div class="ContactMePage">
+        <h3>Contact me</h3>
+        <input id="email" type="email" placeholder="Your gmail">
+        <textarea id="querytext" placeholder="Type your query here" rows="5" cols="10"></textarea>
+        <button id="submitcontact">Send</button>
         <ul>
+            <a href="https://twitter.com/deadwood_x" target="_blank">
+                <img src="twitter-alt-square.png" alt="Open X | Twitter">
+            </a>
+            <a href="https://www.linkedin.com/in/aakash-gudivada-a30282238/" target="_blank">
+                <img src="linkedin.png" alt="Open LinkedIn Profile">
+            </a>
+            <a href="https://twitter.com/deadwood_x" target="_blank">
+                <img src="github.png" alt="Open Github Profile">
+            </a>
+        </ul>
+        <h3 id="meet">Schedule a meet</h3>
+        <textarea id="reason" placeholder="Type the reason here" rows="5" cols="10"></textarea>
+        <input id="date" type="date" max="2024-5-1">
+        <input id="time" type="time" placeholder="Time">
+        <button id="submitcontact">Request a meet</button>
+    </div>
+
+    <div class="PreviousWorkPage">
+        <h3>Previous Work</h3>
+        <p>Matchmaking System</p>
+        <video controls>
+            <source src="Videos/matchmaking.mp4" type="video/mp4">
+        </video>
+        <p>Basic Grid System</p>
+        <video controls>
+            <source src="Videos/gridsystem.mp4" type="video/mp4">
+        </video>
+        <p>Moving Coaster Framework</p>
+        <video controls>
+            <source src="Videos/coastervid.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="SkillsPage">
+        <h3>CORE EXPERTISE</h3>
+        <ul>
+            <li>
+                <h3>PROGRAMMING</h3>
+                <img src="Images/file-code.png">
+                <p id="exp">7 years of Experience and Specialization</p>
+                <ul>
+                    <p>Engineered a comprehensive, playable conceptual framework encompassing intuitive controls.</p>
+                    <p>Established a cohesive ecosystem of diverse applications utilizing APIs and developing Bots.</p>
+                    <p>Proficient in both front and back end development, ensuring seamless user experiences.</p>
+                    <p>Devised a sophisticated email/SMTP/alert notification system tailored for client interactions.</p>
+                    <p>Pioneered the development of auto-translation portals/extensions, enhancing accessibility for games and websites.</p>
+                </ul>
+                <button onclick="window.location.href='https://x.com/deadwood_x/status/1789534664933179812'">RECENT WORK</button>
+            </li>
+            <li>
+                <h3>UI/UX DESIGNING</h3>
+                <img src="Images/object-exclude.png">
+                <p id="exp">6 years of Experience and Specialization</p>
+                <ul>
+                    <p>Crafting sleek and modern theme-based user interface</p>
+                    <p>Implementing interface optimization and customization for cross-platform functionality, prioritizing peak performance.</p>
+                </ul>
+                <button>LEARN MORE</button>
+            </li>
+            <li>
+                <h3>2D AND 3D GRAPHICS DESIGNING</h3>
+                <img src="Images/model-cube-arrows.png">
+                <p id="exp">3.8 years of Experience</p>
+                <ul>
+                    <p>3D Low/Med Polypm Meshes creation</p>
+                    <p>Mastered at Basic Animating in Blender.</p>
+                </ul>
+                <button onclick="window.location.href='https://www.youtube.com'">RECENT WORK</button>
+            </li>
+            <li>
+                <h3>DATA SCIENCE AND MLM ENGINEERING</h3>
+                <img src="Images/science.png">
+                <p id="exp">2 years of Experience</p>
+                <ul>
+                    <p>Crafting dynamic or static websites for small/large scale business/individuals.</p>
+                    <p>Developing custom-built APIs for personal/commericial purposes.</p>
+                </ul>
+                <button>LEARN MORE</button>
+            </li>
+            <li>
+                <h3>YOUTUBE AND INSTRUCTING</h3>
+                <img src="Images/tour-guide-people.png">
+                <p id="exp">3 years of Experience</p>
+                <ul>
+                    <p>Crafting dynamic or static websites for small/large scale business/individuals.</p>
+                    <p>Developing custom-built APIs for personal/commericial purposes.</p>
+                </ul>
+                <button onclick="window.location.href='https://x.com/deadwood_x/status/1789534664933179812'">YOUTUBE</button>
+                <button onclick="window.location.href='https://x.com/deadwood_x/status/1789534664933179812'">RECENT</button>
+            </li>
+            <li>
+                <h3>FULL-STACK WEB DEVELOPING</h3>
+                <img src="Images/browser.png">
+                <p id="exp">3 years of Experience</p>
+                <ul>
+                    <p>Crafting dynamic or static websites for small/large scale business/individuals.</p>
+                    <p>Developing custom-built APIs for personal/commericial purposes.</p>
+                </ul>
+                <button>LEARN MORE</button>
+            </li>
+            <li>
+                <h3>API ENGINEERING (node.js)</h3>
+                <img src="Images/api.png">
+                <p id="exp">2 years of Experience</p>
+                <ul>
+                    <p>Crafting dynamic or static websites for small/large scale business/individuals.</p>
+                    <p>Developing custom-built APIs for personal/commericial purposes.</p>
+                </ul>
+                <button onclick="window.location.href='https://x.com/deadwood_x/status/1789534664933179812'">RECENT WORK</button>
+            </li>
         </ul>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
