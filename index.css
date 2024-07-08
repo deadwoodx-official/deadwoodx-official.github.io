@@ -1,12 +1,13 @@
 body{
-    background-color: #000f;
+    background-color: #141414;
     backdrop-filter: blur(6px);
     background-repeat: no-repeat;
     background-size: cover;
     font-family:Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -395,11 +396,6 @@ body{
     display: none;
 }
 
-html {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
 .SkillsPage h3{
     color: #fff;
 }
@@ -468,7 +464,6 @@ html {
 }
 
 .ServicesPage{
-    display: flex;
     z-index: 2;
 }
 
@@ -498,12 +493,59 @@ html {
     font-size: 110%;
 }
 
+.bottomfooter{
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    height: 150px;
+    background-image: linear-gradient(to right,#141414,#171717);
+}
+
+.bottomfooter h3{
+    height: 100%;
+    top: 0;
+    width: 30vw;
+    margin: 0;
+    padding: 0;
+    left: 10%;
+    position: absolute;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    text-align: right;
+    justify-content: right;
+}
+
+.bottomfooter p{
+    margin: 0;
+    width: 30vw;
+    padding: 0;
+    position: absolute;
+    left: 50vw;
+    top: 25%;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    height: 50%;
+    color: #fff;
+}
+
+#sample{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: 60%;
+    top: 20vh;
+    display: flex;
+}
+
 @media(max-width: 768px){
    body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow-y: hidden;
+    overflow-y: scroll;
    }
    .ContactMePage,
    .SkillsPage,
